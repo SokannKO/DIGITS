@@ -165,8 +165,8 @@ class DataIngestion(DataIngestionInterface):
 
         else:
             # separate validation images
-            feature_image_list = self.make_image_list(self.validation_feature_file)
-            label_image_list = self.make_image_list(self.validation_label_file)
+            feature_image_list = self.text_image_list('validation_feature_file')
+            label_image_list = self.text_image_list('validation_label_file')
 
         # make sure filenames match
         if len(feature_image_list) != len(label_image_list):
