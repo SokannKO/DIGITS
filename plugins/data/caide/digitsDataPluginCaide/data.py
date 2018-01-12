@@ -119,8 +119,8 @@ class DataIngestion(DataIngestionInterface):
     @staticmethod
     @override
     def get_id():
-        #return "image-caide"
-        return "image-segmentation"
+        return "image-caide"
+        #return "image-segmentation"
 
     @staticmethod
     @override
